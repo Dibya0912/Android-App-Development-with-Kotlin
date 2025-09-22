@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable anime
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id editTextText
+id editTextText2
+id editTextText3
+id editTextText4
+id imageView
+id main
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.LinearLayout
+style Theme.LinearLayout
+xml backup_rules
+xml data_extraction_rules
