@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <stroke
+                        android:width="4dp"
+                        android:color="#000000" />
+                    <solid android:color="#CCCCCC" />
+                </shape>
+            </item>
+
+            <item
+                android:left="35dp"
+                android:right="35dp"
+                android:top="-4dp"
+                android:bottom="190dp">
+                <shape android:shape="rectangle">
+                    <size android:width="30dp" android:height="10dp" />
+                    <corners android:radius="3dp" />
+                    <solid android:color="#000000" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip
+            android:clipOrientation="vertical"
+            android:gravity="bottom">
+            <level-list>
+                <item android:maxLevel="20" android:drawable="@drawable/battery_level_red" />
+                <item android:minLevel="21" android:maxLevel="80" android:drawable="@drawable/battery_level_yellow" />
+                <item android:minLevel="81" android:maxLevel="100" android:drawable="@drawable/battery_level_green" />
+            </level-list>
+        </clip>
+    </item>
+
+</layer-list>

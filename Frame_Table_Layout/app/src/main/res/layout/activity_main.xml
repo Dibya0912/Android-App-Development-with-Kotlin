@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F8F5FF">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:stretchColumns="*"
+        android:padding="16dp">
+
+
+        <TableRow>
+            <Button> B1 </Button>
+            <Button> B2 </Button>
+            <Button> B3 </Button>
+        </TableRow>
+
+
+        <TableRow>
+            <Button> B4 </Button>
+            <Button> B5 </Button>
+            <Button> B6 </Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#6A4CB3"
+        app:cornerRadius="40dp"
+        android:text="Outer"
+        android:textColor="#fff" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF6F61"
+        app:cornerRadius="25dp"
+        android:text="Inner"
+        android:textColor="#fff" />
+
+</FrameLayout>
